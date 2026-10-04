@@ -94,7 +94,7 @@ function ns.ToggleConfig()
 end
 
 -- Its entry in the game's Options > AddOns list (Options.lua).
-ns.AddOptionsPanel({
+FrogLib.Options.Add("FrogAuras", ns, {
     open = function()
         if not (ns.window and ns.window:IsShown()) then ns.ToggleConfig() end
     end,

@@ -2,12 +2,12 @@
 ## Title: FrogAuras
 ## Category: Frog Wizard
 ## Notes: Tracks things WeakAuras-style: an icon (and a glow on its action button) when a spell like Revenge becomes usable, with a countdown of its window.
-## Version: 0.1.0
+## Version: 0.1.1
 ## SavedVariables: FrogAurasDB
 ## IconTexture: Interface\Icons\Ability_Warrior_Revenge
 ## AddonCompartmentFunc: FrogAuras_OnCompartmentClick
 
-Options.lua
+Libs\FrogLib\FrogLib.xml
 ConfigKit.lua
 Core.lua
 Glow.lua
