@@ -67,13 +67,10 @@ local function Display(index)
     f:SetFrameStrata("MEDIUM")
     f:SetClampedToScreen(true)
     f:SetMovable(true)
-    f:RegisterForDrag("LeftButton")
-    f:SetScript("OnDragStart", f.StartMoving)
-    f:SetScript("OnDragStop", function(self)
-        self:StopMovingOrSizing()
-        local aura = ns.db.auras[self.index]
-        if aura then SavePoint(self, aura) end
-    end)
+    FrogLib.Mover.Make(f, { save = function()
+        local aura = ns.db.auras[f.index]
+        if aura then SavePoint(f, aura) end
+    end })
 
     local back = f:CreateTexture(nil, "BACKGROUND")
     back:SetAllPoints()

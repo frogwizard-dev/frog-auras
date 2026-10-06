@@ -32,20 +32,9 @@ ns.defaults = {
     locked = true, -- unlocked: every aura shows (a sample) and can be dragged
 }
 
-function ns.Print(...)
-    print("|cff7fd15fFrogAuras|r:", ...)
-end
+ns.Print = FrogLib.Util.Printer("FrogAuras", "7fd15f")
 
-local function CopyDefaults(src, dst)
-    for k, v in pairs(src) do
-        if type(v) == "table" then
-            if type(dst[k]) ~= "table" then dst[k] = {} end
-            CopyDefaults(v, dst[k])
-        elseif dst[k] == nil then
-            dst[k] = v
-        end
-    end
-end
+local CopyDefaults = FrogLib.Util.CopyDefaults
 ns.CopyDefaults = CopyDefaults
 
 function ns.NewAura(template)
