@@ -1,5 +1,10 @@
 # FrogAuras
 
+## 0.1.2
+
+### Under the hood
+- Its settings' text templates are FrogLib's now, shared with the other Frog Wizard add-ons; nothing changes in use.
+
 ## 0.1.1
 
 ### Under the hood
