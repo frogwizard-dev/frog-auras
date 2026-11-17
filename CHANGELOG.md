@@ -1,5 +1,11 @@
 # FrogAuras
 
+## 0.1.4
+
+- Far less work: triggers are looked at when the game says something they hang on changed, not twenty times a second; spells are looked up once; the window's countdown runs only while one shows; glows pulse by animation and the buttons are only looked over when what glows changes.
+- The cooldown on an aura's icon keeps showing in combat, where the game keeps its times secret.
+- Shared code (FrogLib 1.12.0): see its notes for the rest of what's fixed.
+
 ## 0.1.3
 
 - Settings: a dropdown shows the current choice afresh whenever its page opens, and shift-clicking + or - moves ten steps at once. The settings controls now come from FrogLib, shared with Frog Wizard's other add-ons.
